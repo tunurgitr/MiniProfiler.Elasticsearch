@@ -1,8 +1,16 @@
-version: 1.0.{build}
+version: 4.0.0-alpha{build}
 skip_branch_with_pr: true
-image: Visual Studio 2015
+image: Visual Studio 2017
 configuration: Release
 platform: Any CPU
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
 init:
 - cmd: git config --global core.autocrlf true
 nuget:
@@ -13,14 +21,14 @@ build:
   project: MiniProfiler.Elasticsearch.sln
   verbosity: minimal
 after_build:
-- cmd: nuget pack ./src/MiniProfiler.Elasticsearch/MiniProfiler.Elasticsearch.nuspec
+- cmd: nuget pack ./src/MiniProfiler.ElasticsearchCore/MiniProfiler.ElasticsearchCore.nuspec
 artifacts:
 - path: '*.nupkg'
   name: nuget
 deploy:
 - provider: NuGet
   api_key:
-    secure: FR4SJS+eNxyKbNj4sYviZE4uayBcvyVm8YbCEwjAGts5O0/nnjqheQKS2F7WNABd
+    secure: mYqBEvUv6rDtmS/95BMwpWwibUOt8Yr9FB9dFu/UslAOg4Vs0i651jR5V255Npl4
   artifact: nuget
   on:
     APPVEYOR_REPO_TAG: true
