@@ -31,4 +31,4 @@ deploy:
     secure: mYqBEvUv6rDtmS/95BMwpWwibUOt8Yr9FB9dFu/UslAOg4Vs0i651jR5V255Npl4
   artifact: nuget
   on:
-    APPVEYOR_REPO_TAG: true
+    branch: master
