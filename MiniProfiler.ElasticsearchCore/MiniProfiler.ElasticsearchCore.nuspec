@@ -12,7 +12,7 @@
     <summary>Provides Elasticsearch.Net and NEST with profiling to MiniProfiler feature.</summary>
     <tags>profiler elasticsearch asp.net performance profiling timing</tags>
     <dependencies>
-      <dependency id="MiniProfiler.Shared" version="[4.0.0-beta.50-5)" />
+      <dependency id="MiniProfiler.Shared" version="[4.0.0-beta.50,5)" />
       <dependency id="NEST" version="[5,6]" />
     </dependencies>
   </metadata>
