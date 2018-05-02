@@ -1,4 +1,4 @@
-# MiniProfiler.Elasticsearch
+# MiniProfiler.ElasticsearchCore
 Put your [Elasticsearch.Net and NEST](https://github.com/elastic/elasticsearch-net) requests timings directly into [MiniProfiler](https://github.com/MiniProfiler/dotnet).
 
 ![profiler-popup](https://user-images.githubusercontent.com/3474842/30780873-de83efd8-a11d-11e7-8735-49dea4a1d4f1.png)
@@ -7,7 +7,7 @@ Put your [Elasticsearch.Net and NEST](https://github.com/elastic/elasticsearch-n
 ## Install
 Run the following command in the Package Manager Console (NuGet).
 ```bash
-PM> Install-Package MiniProfiler.Elasticsearch
+PM> Install-Package MiniProfiler.ElasticsearchCore
 ```
 ## Versions compatibility
 | MiniProfiler.Elasticsearch | NEST and Elasticsearch.Net | MiniProfiler | Build Status | NuGet Feed |
@@ -18,5 +18,3 @@ PM> Install-Package MiniProfiler.Elasticsearch
 
 ## Usage
 Update usages of ``ElasticClient`` or ``ElasticsearchClient`` with their respected profiled version ``ProfiledElasticClient`` or ``ProfiledElasticsearchClient``.
-
-Reference [Sample.Elasticsearch](https://github.com/romansp/MiniProfiler.Elasticsearch/tree/master/samples/Sample.Elasticsearch) for working example.
