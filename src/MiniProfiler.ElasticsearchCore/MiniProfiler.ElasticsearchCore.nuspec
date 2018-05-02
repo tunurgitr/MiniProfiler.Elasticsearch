@@ -17,8 +17,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\MiniProfiler.ElasticsearchCore.dll" target="lib\net45\MiniProfiler.ElasticsearchCore.dll" />
-    <file src="bin\Release\MiniProfiler.ElasticsearchCore.pdb" target="lib\net45\MiniProfiler.ElasticsearchCore.pdb" />
-    <file src="bin\Release\MiniProfiler.ElasticsearchCore.xml" target="lib\net45\MiniProfiler.ElasticsearchCore.xml" />
+    <file src="bin\Release\netcoreapp2.0\MiniProfiler.ElasticsearchCore.dll" target="lib\netcoreapp2.0\MiniProfiler.ElasticsearchCore.dll" />
+    <file src="bin\Release\netcoreapp2.0\MiniProfiler.ElasticsearchCore.pdb" target="lib\netcoreapp2.0\MiniProfiler.ElasticsearchCore.pdb" />
+    <file src="bin\Release\netcoreapp2.0\MiniProfiler.ElasticsearchCore.xml" target="lib\netcoreapp2.0\MiniProfiler.ElasticsearchCore.xml" />
   </files>
 </package>
