@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.ElasticsearchCore", "MiniProfiler.ElasticsearchCore\MiniProfiler.ElasticsearchCore.csproj", "{6F41AFBD-1FC1-4DF1-980A-F8E81A7646C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.ElasticsearchCore", "src\MiniProfiler.ElasticsearchCore\MiniProfiler.ElasticsearchCore.csproj", "{6F41AFBD-1FC1-4DF1-980A-F8E81A7646C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

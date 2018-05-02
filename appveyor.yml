@@ -21,7 +21,7 @@ build:
   project: MiniProfiler.ElasticsearchCore.sln
   verbosity: minimal
 after_build:
-- cmd: nuget pack ./MiniProfiler.ElasticsearchCore/MiniProfiler.ElasticsearchCore.nuspec
+- cmd: nuget pack ./src/MiniProfiler.ElasticsearchCore/MiniProfiler.ElasticsearchCore.nuspec
 artifacts:
 - path: '*.nupkg'
   name: nuget
