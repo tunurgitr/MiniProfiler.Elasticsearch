@@ -5,6 +5,14 @@
     <RootNamespace>StackExchange.Profiling.Elasticsearch</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.0\MiniProfiler.ElasticsearchCore.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.0\MiniProfiler.ElasticsearchCore.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Elasticsearch.Net" Version="6.1.0" />
     <PackageReference Include="MiniProfiler.Shared" Version="4.0.0-beta.50" />
